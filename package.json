@@ -23,7 +23,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 src/*.css src/**/*.html src/**/*.css dist/",
+    "build": "npm run clean && tsc && npm run copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -69,7 +71,9 @@
     "@storybook/react": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "copyfiles": "^2.4.1",
     "prop-types": "^15.8.1",
+    "rimraf": "^3.0.2",
     "webpack": "^5.74.0"
   }
 }
