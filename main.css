@@ -1,0 +1,43 @@
+.button {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+}
+
+.button--primary {
+    color: white;
+    background-color: black;
+}
+
+.button--secondary {
+    color: black;
+    background-color: white;
+    box-shadow: black 0px 0px 0px 2px inset;
+}
+
+.button--danger {
+    color: #FF6565;
+    background-color: #FFD0D0;
+    box-shadow: #FF6565 0px 0px 0px 2px inset;
+}
+
+.button--small {
+    font-size: 16px;
+    padding: 12px 45px;
+    border-radius: 10px;
+}
+
+.button--medium {
+    font-size: 16px;
+    padding: 17px 80px;
+    border-radius: 15px;
+}
+
+.button--large {
+    font-size: 19px;
+    padding: 23px 108px;
+    border-radius: 20px;
+}
