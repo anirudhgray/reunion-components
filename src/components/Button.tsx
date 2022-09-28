@@ -1,8 +1,9 @@
 import React from 'react';
+import '/node_modules/primeflex/primeflex.css'
 import '../main.css';
 
 
-interface ButtonProps {
+type ButtonProps = {
     /**
      * Is this the principal call to action on the page?
      */
@@ -14,11 +15,11 @@ interface ButtonProps {
     /**
      * How large should the button be?
      */
-    size?: 'small' | 'medium' | 'large';
+    size?: string;
     /**
      * Button contents
      */
-    label: string;
+    label?: string;
     /**
      * Optional click handler
      */
@@ -26,19 +27,23 @@ interface ButtonProps {
     state?: string;
     color?: string;
     borderRadius?: number;
+    variant?: string;
+    children?: JSX.Element | string;
+    style?: object;
+    className?: string;
 }
 
-export const Button = ({
-    mode = 'secondary', size = 'medium', state, backgroundColor, color, label, borderRadius, ...props
+export const Button: React.FC<ButtonProps> = ({
+    mode = 'secondary', size = 'medium', state, backgroundColor, color, className, label = 'Button', variant, onClick, borderRadius, style, children
 }: ButtonProps) => {
     return (
         <button
             type="button"
-            className={['button', `button--${size}`, `button--${mode}`].join(' ')}
-            style={{ backgroundColor, color, borderRadius }}
-            {...props}
+            className={['button', `button--${size}`, `button--${mode}`, `button--${variant}`, className].join(' ')}
+            style={{ backgroundColor, color, borderRadius, ...style }}
+            onClick={onClick}
         >
-            {label}
+            {children ? children : label}
         </button>
     );
 };

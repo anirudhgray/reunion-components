@@ -8,6 +8,10 @@
   ],
   "main": "dist/index.js",
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.7",
+    "@mui/system": "^5.10.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,6 +19,7 @@
     "@types/node": "^16.11.62",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "primeflex": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -24,7 +29,7 @@
   "scripts": {
     "start": "react-scripts start",
     "clean": "rimraf dist/",
-    "copy-files": "copyfiles -u 1 src/*.css src/**/*.html src/**/*.css dist/",
+    "copy-files": "copyfiles -u 1 src/*.css src/assets/* src/**/*.html src/**/*.css dist/",
     "build": "npm run clean && tsc && npm run copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

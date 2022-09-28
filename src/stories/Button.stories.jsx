@@ -13,6 +13,10 @@ export default {
     mode: {
       options: ['primary', 'secondary', 'danger'],
       control: { type: 'radio' }
+    },
+    variant: {
+      options: ['filled', 'outline', 'text'],
+      control: { type: 'radio' }
     }
   },
 };
@@ -51,3 +55,13 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
+
+export const Text = Template.bind({});
+Text.args = {
+  variant: 'text',
+}
+
+export const Outline = Template.bind({});
+Outline.args = {
+  variant: 'outline',
+}
