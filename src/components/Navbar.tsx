@@ -34,11 +34,22 @@ export const Navbar = ({
                     )}
                 </nav>
                 <Button onClick={() => showMobileNav(!mobileNav)} className='p-0 md:hidden block' variant='text'>
-                    <img src={require('../assets/hamburger.svg').default} alt='hamburger'></img>
+                    {mobileNav ? (
+                        <img src={require('../assets/cross.svg').default} alt='hamburger'></img>
+                    ) : (
+                        <img src={require('../assets/hamburger.svg').default} alt='hamburger'></img>
+                    )}
                 </Button>
             </div>
-            <div className={`${mobileNav ? 'block' : 'hidden'}`}>
-                boom test
+            <div className={`py-4 px-3 flex-column flex-grow-1 bg-white align-items-start gap-3 ${mobileNav ? 'flex' : 'hidden'}`}>
+                {navItems?.map((item, index) => {
+                    return (
+                        <Button key={index} className='p-2 text-lg' size='small' variant='text'>{item}</Button>
+                    )
+                })}
+                {(React.isValidElement(end)) ? end : (
+                    <Button className='mt-4 align-self-center' size='medium' variant='filled' mode='primary'>{end}</Button>
+                )}
             </div>
         </div>
     );
