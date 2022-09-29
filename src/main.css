@@ -1,8 +1,20 @@
-/************
-NAVBAR
-************/
-
-
+:root {
+    --button-primary-color: white;
+    --button-primary-bgcolor: black;
+    --button-primary-boxshadow: none;
+    --button-secondary-color: black;
+    --button-secondary-bgcolor: white;
+    --button-secondary-boxshadow: black 0px 0px 0px 2px inset;
+    --button-danger-color: #FF6565;
+    --button-danger-bgcolor: #FFD0D0;
+    --button-danger-boxshadow: #FF6565 0px 0px 0px 2px inset;
+    --button-small-padding: 12px 45px;
+    --button-small-bradius: 10px;
+    --button-medium-padding: 17px 80px;
+    --button-medium-bradius: 15px;
+    --button-large-padding: 23px 108px;
+    --button-large-bradius: 20px;
+}
 
 /************
 BUTTON
@@ -16,7 +28,6 @@ html {
 }
 
 .button {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border: 0;
     cursor: pointer;
     display: inline-block;
@@ -24,20 +35,20 @@ html {
 }
 
 .button--primary {
-    color: white;
-    background-color: black;
+    color: var(--button-primary-color);
+    background-color: var(--button-primary-bgcolor);
 }
 
 .button--secondary {
-    color: black;
-    background-color: white;
-    box-shadow: black 0px 0px 0px 2px inset;
+    color: var(--button-secondary-color);
+    background-color: var(--button-secondary-bgcolor);
+    box-shadow: var(--button-secondary-boxshadow);
 }
 
 .button--danger {
-    color: #FF6565;
-    background-color: #FFD0D0;
-    box-shadow: #FF6565 0px 0px 0px 2px inset;
+    color: var(--button-danger-color);
+    background-color: var(--button-danger-bgcolor);
+    box-shadow: var(--button-danger-boxshadow);
 }
 
 .button--small {
