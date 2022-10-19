@@ -16,16 +16,85 @@
     --button-large-bradius: 20px;
 }
 
-/************
-BUTTON
-************/
-
 body,
 html {
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
+/************
+CHECKBOX
+************/
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.checkbox--main {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 27px;
+    width: 27px;
+    padding: 1px;
+    border-radius: 3.5px;
+    background-color: white;
+    box-shadow: black 0 0 0 3px inset;
+}
+
+.checkbox--disabled {
+    box-shadow: #5A5A5A 0 0 0 3px inset;
+}
+
+/* .checkbox--main:hover input ~ .checkbox {
+    background-color: #5A5A5A;
+} */
+
+/* .checkbox--main input:active ~ .checkbox {
+    background-color: white;
+} */
+
+.checkbox--main input:checked ~ .checkbox {
+    background-color: black;
+}
+
+.checkbox--main input:checked ~ .checkbox--disabled {
+    background-color: #5A5A5A;
+}
+
+.checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox--main input:checked ~ .checkbox:after {
+    display: block;
+}
+
+.checkbox--main .checkbox:after {
+    left: 58%;
+    bottom: 48%;
+    width: 7px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg) translate(0%, 50%);
+}
+
+/************
+BUTTON
+************/
 
 .button {
     border: 0;
