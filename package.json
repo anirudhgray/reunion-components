@@ -1,5 +1,5 @@
 {
-  "name": "reunion-components",
+  "name": "@reunionhq/reunion-components",
   "version": "0.1.0",
   "private": false,
   "files": [
@@ -24,6 +24,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "semantic-release": "^19.0.5",
     "typescript": "^4.8.3",
     "web-vitals": "^2.1.4"
   },
@@ -35,7 +36,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=743a6652fe75"
   },
   "eslintConfig": {
     "extends": [
@@ -77,9 +79,12 @@
     "@storybook/react": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "chromatic": "^6.10.4",
     "copyfiles": "^2.4.1",
     "prop-types": "^15.8.1",
     "rimraf": "^3.0.2",
     "webpack": "^5.74.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "reunion-components@0.1.0"
 }
