@@ -1,0 +1,20 @@
+.step-new--hr {
+    margin: 0;
+    border: solid var(--orochimaru) 4px;
+}
+
+.step-new--step {
+    flex: 1 1 0
+}
+
+.step-new--hr-done {
+    border: var(--step-progress-color) solid 0px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    margin: 0;
+}
+
+.step-new--text {
+    font-size: var(--text);
+    margin-bottom: 8px;
+}

@@ -7,6 +7,10 @@
     --forged-steel: #5A5A5A;
     --codex-grey: #9C9C9C;
     --orochimaru: #D9D9D9;
+    --purple: #6C63FF;
+    --green: #6ACFA6;
+    --red: #FF6565;
+    --light-red: #FFD0D0;
     /* TYPOGRAPHY */
     --text-xxl: 36px;
     --text-xl: 32px;
@@ -20,27 +24,29 @@
     --radius-sm: 10px;
     --radius-xs: 5px;
 
+    /* STEP NEW */
+    --step-progress-color: var(--black);
     /* ALERT BUTTON */
-    --alert-button-bgcolor: black;
-    --alert-button-title-color: black;
-    --alert-button-desc-color: #636363;
-    --alert-button-unselected-bgcolor: #D9D9D9;
+    --alert-button-bgcolor: var(--black);
+    --alert-button-title-color: var(--black);
+    --alert-button-desc-color: var(--forged-steel);
+    --alert-button-unselected-bgcolor: var(--orochimaru);
     /* CHECKBOX */
     --checkbox-tick-color: white;
-    --checkbox-disabled-color: #5A5A5A;
-    --checkbox-color: black;
+    --checkbox-disabled-color: var(--forged-steel);
+    --checkbox-color: var(--black);
     --checkbox-unchecked-bg-color: white;
     --checkbox-box-shadow-w: 3px;
     /* BUTTON */
     --button-primary-color: white;
-    --button-primary-bgcolor: black;
+    --button-primary-bgcolor: var(--black);
     --button-primary-boxshadow: none;
-    --button-secondary-color: black;
+    --button-secondary-color: var(--black);
     --button-secondary-bgcolor: white;
-    --button-secondary-boxshadow: black 0px 0px 0px 2px inset;
-    --button-danger-color: #FF6565;
-    --button-danger-bgcolor: #FFD0D0;
-    --button-danger-boxshadow: #FF6565 0px 0px 0px 2px inset;
+    --button-secondary-boxshadow: var(--black) 0px 0px 0px 2px inset;
+    --button-danger-color: var(--red);
+    --button-danger-bgcolor: var(--light-red);
+    --button-danger-boxshadow: var(--red) 0px 0px 0px 2px inset;
     --button-small-padding: 12px 45px;
     --button-medium-padding: 17px 80px;
     --button-large-padding: 23px 108px;
