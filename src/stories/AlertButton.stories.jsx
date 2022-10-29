@@ -1,18 +1,18 @@
 import React from 'react';
 
-import { Input } from '../components/Input';
+import { AlertButton } from '../components/AlertButton';
 
 export default {
-    title: 'LevelOne/Input',
-    component: Input,
+    title: 'Example/AlertButton',
+    component: AlertButton,
     argTypes: {
     },
 };
 
-const Template = (args) => <Input {...args} />;
+const Template = (args) => <AlertButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    placeholder: "Email/Username",
-    label: "Label"
+    title: "Project Alerts",
+    description: "WhatsApp notifications for legal, sales,construction, technical updates."
 };
