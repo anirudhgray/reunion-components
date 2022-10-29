@@ -13,4 +13,6 @@ const Template = (args) => <Input {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
+    placeholder: "Email/Username",
+    label: "Label"
 };
