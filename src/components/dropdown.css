@@ -1,0 +1,16 @@
+select.dropdown {
+    background: white;
+    color: black;
+    font-weight: 300;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 18px 20px;
+}
+
+.dropdown--placeholder {
+    color: #9c9c9c9c;
+}
+
+select.dropdown option {
+    color: purple;
+}
