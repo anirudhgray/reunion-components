@@ -5,6 +5,7 @@ select.dropdown {
     border-radius: 20px;
     border: 2px solid black;
     padding: 18px 20px;
+    font-size: var(--text-input);
 }
 
 .dropdown--placeholder {

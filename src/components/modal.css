@@ -1,4 +1,9 @@
 .modal--desc {
     font-weight: 300;
     text-align: center;
+    font-size: var(--text);
+}
+
+.modal--title {
+    font-size: var(--text-xl);
 }

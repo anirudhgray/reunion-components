@@ -3,6 +3,7 @@
     cursor: pointer;
     display: inline-block;
     line-height: 1;
+    font-size: var(--text-input);
 }
 
 .button--primary {

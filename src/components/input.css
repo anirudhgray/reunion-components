@@ -2,11 +2,17 @@
     border-radius: 20px;
     border: 2px solid black;
     padding: 18px 20px;
+    font-size: var(--text-input);
 }
 
 .textinput::placeholder {
     color: #9c9c9c9c;
     font-weight: 300;
+    font-size: var(--text-input);
+}
+
+.textinput--label {
+    font-size: var(--text);
 }
 
 .textinput:focus {

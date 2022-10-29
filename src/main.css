@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap');
 
 :root {
+    /* TYPOGRAPHY */
+    --text-xxl: 36px;
+    --text-xl: 32px;
+    --text-lg: 24px;
+    --text: 20px;
+    --text-sm: 16px;
+    --text-input: 19px;
     /* CHECKBOX */
     --checkbox-tick-color: white;
     --checkbox-disabled-color: #5A5A5A;

@@ -20,10 +20,10 @@ export const Modal: React.FC<ModalProps> = ({
     return (
         <div style={style} className={`flex flex-column justify-content-center align-items-center ${className} ${theme === 'error' ? 'modal--error' : theme === 'success' ? 'modal--success' : 'modal--default'}`}>
             <img src='#' alt='icon'></img>
-            <h2>{title}</h2>
+            <h2 className='modal--title'>{title}</h2>
             <p className='modal--desc'>{description}</p>
             {(React.isValidElement(buttons)) ? buttons : (
-                <Button className='mt-4 align-self-center' size='medium' variant='filled' mode='primary'>{buttons}</Button>
+                <Button className='mt-4 align-self-center' size='medium' variant='filled' mode={theme === 'error' ? 'danger' : theme === 'success' ? 'success' : 'primary'}>{buttons}</Button>
             )}
         </div>
     );
