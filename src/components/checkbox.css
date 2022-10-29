@@ -16,7 +16,7 @@ input[type=checkbox] {
     height: 27px;
     width: 27px;
     padding: 1px;
-    border-radius: var(--checkbox-bradius);
+    border-radius: var(--radius-xs);
     background-color: var(--checkbox-unchecked-bg-color);
     box-shadow: var(--checkbox-color) 0 0 0 var(--checkbox-box-shadow-w) inset;
 }

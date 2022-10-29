@@ -25,17 +25,17 @@
 
 .button--small {
     padding: 12px 45px;
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
 }
 
 .button--medium {
     padding: 17px 80px;
-    border-radius: 15px;
+    border-radius: var(--radius);
 }
 
 .button--large {
     padding: 23px 108px;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
 }
 
 .button--text {
