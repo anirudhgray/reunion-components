@@ -1,0 +1,26 @@
+.textinput {
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 18px 20px;
+}
+
+.textinput::placeholder {
+    color: #9c9c9c9c;
+    font-weight: 300;
+}
+
+.textinput:focus {
+    outline-color: #6C63FF;
+}
+
+.textinput--error {
+    border-color: #FF6565;
+}
+
+.textinput--error:focus {
+    outline-color: #FF6565;
+}
+
+.text--error {
+    color: #FF6565;
+}

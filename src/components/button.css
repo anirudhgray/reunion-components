@@ -1,0 +1,47 @@
+.button {
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+}
+
+.button--primary {
+    color: var(--button-primary-color);
+    background-color: var(--button-primary-bgcolor);
+}
+
+.button--secondary {
+    color: var(--button-secondary-color);
+    background-color: var(--button-secondary-bgcolor);
+    box-shadow: var(--button-secondary-boxshadow);
+}
+
+.button--danger {
+    color: var(--button-danger-color);
+    background-color: var(--button-danger-bgcolor);
+    box-shadow: var(--button-danger-boxshadow);
+}
+
+.button--small {
+    padding: 12px 45px;
+    border-radius: 10px;
+}
+
+.button--medium {
+    padding: 17px 80px;
+    border-radius: 15px;
+}
+
+.button--large {
+    padding: 23px 108px;
+    border-radius: 20px;
+}
+
+.button--text {
+    background-color: transparent;
+    box-shadow: transparent 0 0 0 0 inset;
+}
+
+.button--outline {
+    background-color: transparent;
+}

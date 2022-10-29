@@ -1,0 +1,44 @@
+.step--index-circle {
+    background-color: white;
+    color: black;
+    box-shadow: black 0 0 0 2.5px inset;
+    padding: 0.8rem;
+    border-radius: 50%;
+    height: min-content;
+    aspect-ratio: 1/1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step--index-circle-done {
+    background-color: black;
+    color: white;
+    box-shadow: black 0 0 0 2.5px inset;
+    padding: 0.8rem;
+    border-radius: 50%;
+    height: min-content;
+    aspect-ratio: 1/1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step--dotted-line {
+    height: 0px;
+    width: 100%;
+    border-top: dashed black 2px;
+    top: 50%;
+}
+
+.step--dotted-line-done {
+    border-top-style: solid;
+    width: 0%;
+}
+
+.step--title {
+    bottom: -145%;
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '/node_modules/primeflex/primeflex.css'
-import '../main.css';
+import './step.css';
 
 
 type StepProps = {

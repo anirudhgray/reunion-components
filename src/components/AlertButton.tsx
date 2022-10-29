@@ -24,8 +24,8 @@ export const AlertButton: React.FC<AlertButtonProps> = ({
                 <p className='alert-button--desc'>{description}</p>
             </div>
             <div style={{ backgroundColor }} className={`alert-button--click flex ${!selected ? 'alert-button--click-unselected' : null}`}>
-                <img src='#' alt='tick' className={`mx-auto ${!selected ? 'opacity-0' : 'opacity-100'}`}></img>
+                <img src={require('../assets/tick.svg').default} alt='tick' height={40} className={`mx-auto ${!selected ? 'opacity-0' : 'opacity-100'}`}></img>
             </div>
-        </div>
+        </div >
     );
 };

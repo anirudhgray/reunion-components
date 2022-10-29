@@ -1,6 +1,6 @@
 {
   "name": "@reunionhq/reunion-components",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "private": false,
   "files": [
     "dist",
@@ -37,7 +37,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=743a6652fe75"
+    "chromatic": "npx chromatic --project-token=158ec2a8280c"
   },
   "eslintConfig": {
     "extends": [

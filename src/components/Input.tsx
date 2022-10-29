@@ -1,6 +1,6 @@
 import React from 'react';
 import '/node_modules/primeflex/primeflex.css'
-import '../main.css';
+import './input.css';
 
 
 type InputProps = {
