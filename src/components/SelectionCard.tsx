@@ -1,10 +1,10 @@
 import React from 'react';
 import '/node_modules/primeflex/primeflex.css'
-import './alertButton.css';
+import './selectionCard.css';
 import '../main.css'
 
 
-type AlertButtonProps = {
+type SelectionCardProps = {
     title?: string;
     description?: string;
     onClick?: () => void;
@@ -14,9 +14,9 @@ type AlertButtonProps = {
     backgroundColor?: string;
 }
 
-export const AlertButton: React.FC<AlertButtonProps> = ({
+export const SelectionCard: React.FC<SelectionCardProps> = ({
     className, style, title, description, backgroundColor, selected = true
-}: AlertButtonProps) => {
+}: SelectionCardProps) => {
     return (
         <div style={{ ...style, borderColor: backgroundColor }} className={`flex flex-column alert-button ${!selected ? 'alert-button--unselected' : null} ${className}`}>
             <div className='alert-button--main'>

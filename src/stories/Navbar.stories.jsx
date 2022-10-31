@@ -3,7 +3,7 @@ import { Navbar } from '../components/Navbar';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-    title: 'Example/Navbar',
+    title: 'Level One/Navbar',
     component: Navbar,
     // argTypes: {
     //     end: { control: 'string' }

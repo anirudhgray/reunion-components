@@ -3,7 +3,7 @@ import React from 'react';
 import { Modal } from '../components/Modal';
 
 export default {
-    title: 'Example/Modal',
+    title: 'Level One/Modal',
     component: Modal,
     argTypes: {
         theme: {

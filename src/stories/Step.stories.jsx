@@ -3,7 +3,7 @@ import React from 'react';
 import { Step } from '../components/Step';
 
 export default {
-    title: 'Example/Step',
+    title: 'Level One/Step',
     component: Step,
     argTypes: {
     },

@@ -1,0 +1,11 @@
+.alert-results {
+    background-color: white;
+}
+
+.alert-results--item {
+    padding: 18px;
+}
+
+.alert-results--item:not(:last-child) {
+    border-bottom: var(--codex-grey) solid 1px;
+}

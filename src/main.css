@@ -17,6 +17,7 @@
     --text-lg: 24px;
     --text: 20px;
     --text-sm: 16px;
+    --text-xs: 12px;
     --text-input: 19px;
     /* BORDER RADIUS */
     --radius-lg: 20px;
@@ -52,6 +53,58 @@
     --button-large-padding: 23px 108px;
 }
 
+@media (max-width: 425px) {
+    :root {
+        --text-xxl: 24px;
+        --text-xl: 20px;
+        --text-lg: 20px;
+        --text: 16px;
+        --text-sm: 16px;
+        --text-xs: 12px;
+        --text-input: 19px;
+    }
+}
+
+.radius-lg {
+    border-radius: var(--radius-lg);
+}
+
+.radius-md {
+    border-radius: var(--radius);
+}
+
+.radius-sm {
+    border-radius: var(--radius-sm);
+}
+
+.radius-xs {
+    border-radius: var(--radius-xs);
+}
+
+.text-xxl {
+    font-size: var(--text-xxl) !important;
+}
+
+.text-xl {
+    font-size: var(--text-xl) !important;
+}
+
+.text-lg {
+    font-size: var(--text-lg) !important;
+}
+
+.text-md {
+    font-size: var(--text) !important;
+}
+
+.text-sm {
+    font-size: var(--text-sm) !important;
+}
+
+.text-xs {
+    font-size: var(--text-xs) !important;
+}
+
 body,
 html {
     font-family: 'Lexend', 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -62,4 +115,5 @@ html {
 * {
     font-family: 'Lexend', 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
 }

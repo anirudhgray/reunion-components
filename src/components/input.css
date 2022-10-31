@@ -30,3 +30,11 @@
 .text--error {
     color: var(--red);
 }
+
+.textinput--end-button {
+    background-color: var(--black);
+    border-radius: var(--radius);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

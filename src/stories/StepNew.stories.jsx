@@ -3,7 +3,7 @@ import React from 'react';
 import { StepNew } from '../components/StepNew';
 
 export default {
-    title: 'Example/StepNew',
+    title: 'Level One/StepNew',
     component: StepNew,
     argTypes: {
     },

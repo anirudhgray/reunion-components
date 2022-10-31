@@ -3,7 +3,7 @@ import React from 'react';
 import { Dropdown } from '../components/Dropdown';
 
 export default {
-    title: 'LevelOne/Dropdown',
+    title: 'Level Zero/Dropdown',
     component: Dropdown,
     argTypes: {
     },

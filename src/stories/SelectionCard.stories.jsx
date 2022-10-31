@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { AlertButton } from '../components/AlertButton';
+import { SelectionCard } from '../components/SelectionCard';
 
 export default {
-    title: 'Example/AlertButton',
-    component: AlertButton,
+    title: 'Level One/SelectionCard',
+    component: SelectionCard,
     argTypes: {
     },
 };
 
-const Template = (args) => <AlertButton {...args} />;
+const Template = (args) => <SelectionCard {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {

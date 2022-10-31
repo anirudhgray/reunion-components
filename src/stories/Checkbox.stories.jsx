@@ -3,7 +3,7 @@ import React from 'react';
 import { Checkbox } from '../components/Checkbox';
 
 export default {
-    title: 'LevelOne/Checkbox',
+    title: 'Level Zero/Checkbox',
     component: Checkbox,
     argTypes: {
         backgroundColor: { control: 'color' },
