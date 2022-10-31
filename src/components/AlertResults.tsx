@@ -5,7 +5,6 @@ import { Tag } from './Tag';
 
 
 type AlertResultsProps = {
-    onClick?: () => void;
     /**
     *style for container element
     */
@@ -54,9 +53,9 @@ export const AlertResults: React.FC<AlertResultsProps> = ({
                         <div className="md:block hidden font-light">
                             <p>{item.address}</p>
                         </div>
-                        <div className='flex-shrink-0 flex flex-column align-items-center gap-1'>
+                        <div className='flex-shrink-0 flex flex-column align-items-center gap-1 justify-content-center'>
                             <img src={require('../assets/add.svg').default} alt="add" />
-                            <p className='text-center'>Add to tracklist</p>
+                            <p className='text-center sm:block hidden'>Add to tracklist</p>
                         </div>
                     </div>
                 )
