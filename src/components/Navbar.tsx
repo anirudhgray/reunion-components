@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 
 
 interface NavbarProps {
+    onClick?: () => void;
     navItems?: string[],
     start?: any | JSX.Element,
     end?: any | JSX.Element,
@@ -20,13 +21,13 @@ const variants = {
 
 
 export const Navbar = ({
-    navItems, start, end, className, style,
+    navItems, start, end, className, style, onClick,
     ...props
 }: NavbarProps) => {
     const [mobileNav, showMobileNav] = useState(false)
     const [animMobileNav, showAnimMobileNav] = useState(false)
     return (
-        <div>
+        <div onClick={onClick}>
             <div style={{ ...style }} className={`flex flex-row bg-white justify-content-between align-items-center ${className} px-3 py-2`} {...props}>
                 {(React.isValidElement(start)) ? start : (
                     <img className='h-2rem' alt='logo' src={start}></img>

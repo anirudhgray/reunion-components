@@ -7,6 +7,7 @@ import '../main.css'
 type SelectionCardProps = {
     title?: string;
     description?: string;
+    onClick?: () => void;
     style?: object;
     className?: string;
     selected?: boolean;
@@ -14,10 +15,10 @@ type SelectionCardProps = {
 }
 
 export const SelectionCard: React.FC<SelectionCardProps> = ({
-    className, style, title, description, backgroundColor, selected = true
+    className, style, title, description, backgroundColor, selected = true, onClick, ...props
 }: SelectionCardProps) => {
     return (
-        <div style={{ ...style, borderColor: backgroundColor }} className={`flex flex-column alert-button ${!selected ? 'alert-button--unselected' : null} ${className}`}>
+        <div {...props} onClick={onClick} style={{ ...style, borderColor: backgroundColor }} className={`flex flex-column alert-button ${!selected ? 'alert-button--unselected' : null} ${className}`}>
             <div className='alert-button--main'>
                 <h2 className='alert-button--title'>{title}</h2>
                 <p className='alert-button--desc'>{description}</p>
