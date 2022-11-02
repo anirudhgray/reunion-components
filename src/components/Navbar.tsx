@@ -34,7 +34,7 @@ export const Navbar = ({
     const [animMobileNav, showAnimMobileNav] = useState(false)
     return (
         <div onClick={onClick}>
-            <div style={{ ...style }} className={`flex flex-row bg-white justify-content-between align-items-center ${className} lg:px-3 lg:py-2 p-2`} {...props}>
+            <div style={{ ...style }} className={`flex flex-row navbar justify-content-between align-items-center ${className} lg:px-3 lg:py-2 p-2`} {...props}>
                 {(React.isValidElement(start)) ? start : (
                     <img className='h-2rem' alt='logo' src={start}></img>
                 )}
@@ -66,7 +66,7 @@ export const Navbar = ({
             <motion.div
                 animate={animMobileNav ? "open" : "closed"}
                 variants={variants}
-                className={`py-4 px-3 flex-column flex-grow-1 bg-white align-items-start gap-3 ${mobileNav ? 'flex' : 'hidden'}`}>
+                className={`py-4 px-3 absolute flex-column flex-grow-1 navbar align-items-start gap-3 ${mobileNav ? 'flex' : 'hidden'}`}>
                 {navItems?.map((item, index) => {
                     return (
                         <a href={item.path || "/"}>

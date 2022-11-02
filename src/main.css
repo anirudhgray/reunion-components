@@ -25,6 +25,7 @@
     --radius-sm: 10px;
     --radius-xs: 5px;
 
+    --navbar-bgcolor: white;
     /* STEP NEW */
     --step-progress-color: var(--black);
     /* ALERT BUTTON */
