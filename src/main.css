@@ -54,7 +54,7 @@
     --button-large-padding: 23px 108px;
 }
 
-@media (max-width: 900px) and (min-width:700px) {
+@media (max-width: 900px) {
     :root {
         --text-xxl: 32px;
         --text-xl: 28px;

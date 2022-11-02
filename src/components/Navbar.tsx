@@ -66,7 +66,8 @@ export const Navbar = ({
             <motion.div
                 animate={animMobileNav ? "open" : "closed"}
                 variants={variants}
-                className={`py-4 px-3 absolute flex-column flex-grow-1 navbar align-items-start gap-3 ${mobileNav ? 'flex' : 'hidden'}`}>
+                transition={{ type: "tween", ease: "easeInOut" }}
+                className={`py-4 px-3 absolute flex-column flex-grow-1 navbar w-screen h-screen align-items-start gap-3 ${mobileNav ? 'flex' : 'hidden'}`}>
                 {navItems?.map((item, index) => {
                     return (
                         <a href={item.path || "/"}>
