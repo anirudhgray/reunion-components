@@ -42,9 +42,9 @@ export const Navbar = ({
                 <nav className={`md:flex hidden ml-auto lg:gap-5 gap-3`}>
                     {navItems?.map((item, index) => {
                         return (
-                            <Link to={item.path || "/"}>
+                            <a href={item.path || "/"}>
                                 <Button data-text={item} key={index} className='p-2 navbar--navbutton font-light' size='small' variant='text'>{item.name}</Button>
-                            </Link>
+                            </a>
                         )
                     })}
                     {(React.isValidElement(end)) ? end : (
@@ -70,7 +70,9 @@ export const Navbar = ({
                 className={`py-4 px-3 flex-column flex-grow-1 bg-white align-items-start gap-3 ${mobileNav ? 'flex' : 'hidden'}`}>
                 {navItems?.map((item, index) => {
                     return (
-                        <Button key={index} className='p-2 navbar--navbutton font-light text-lg' size='small' variant='text'>{item.name}</Button>
+                        <a href={item.path || "/"}>
+                            <Button key={index} className='p-2 navbar--navbutton font-light text-lg' size='small' variant='text'>{item.name}</Button>
+                        </a>
                     )
                 })}
                 {(React.isValidElement(end)) ? end : (

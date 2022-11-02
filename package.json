@@ -1,6 +1,6 @@
 {
   "name": "@reunionhq/reunion-components",
-  "version": "0.2.5",
+  "version": "0.2.7",
   "private": false,
   "files": [
     "dist",
