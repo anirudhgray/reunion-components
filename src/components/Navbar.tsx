@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../main.css';
+import './navbar.css'
 import '/node_modules/primeflex/primeflex.css'
 import { Button } from './Button';
 import { motion } from "framer-motion"
@@ -7,11 +9,16 @@ import { motion } from "framer-motion"
 
 interface NavbarProps {
     onClick?: () => void;
-    navItems?: string[],
+    navItems?: NavItem[],
     start?: any | JSX.Element,
     end?: any | JSX.Element,
     className?: string,
     style?: object,
+}
+
+interface NavItem {
+    name?: string;
+    path?: string;
 }
 
 const variants = {
@@ -35,7 +42,9 @@ export const Navbar = ({
                 <nav className={`md:flex hidden ml-auto lg:gap-5 gap-3`}>
                     {navItems?.map((item, index) => {
                         return (
-                            <Button key={index} className='p-2' size='small' variant='text'>{item}</Button>
+                            <Link to={item.path || "/"}>
+                                <Button data-text={item} key={index} className='p-2 navbar--navbutton font-light' size='small' variant='text'>{item.name}</Button>
+                            </Link>
                         )
                     })}
                     {(React.isValidElement(end)) ? end : (
@@ -61,7 +70,7 @@ export const Navbar = ({
                 className={`py-4 px-3 flex-column flex-grow-1 bg-white align-items-start gap-3 ${mobileNav ? 'flex' : 'hidden'}`}>
                 {navItems?.map((item, index) => {
                     return (
-                        <Button key={index} className='p-2 text-lg' size='small' variant='text'>{item}</Button>
+                        <Button key={index} className='p-2 navbar--navbutton font-light text-lg' size='small' variant='text'>{item.name}</Button>
                     )
                 })}
                 {(React.isValidElement(end)) ? end : (
