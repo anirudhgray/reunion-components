@@ -24,6 +24,7 @@ type ButtonProps = {
      * Optional click handler
      */
     onClick?: () => void;
+    disabled?: boolean;
     state?: string;
     color?: string;
     borderRadius?: number;
@@ -34,12 +35,13 @@ type ButtonProps = {
 }
 
 export const Button: React.FC<ButtonProps> = ({
-    mode = 'secondary', size = 'medium', state, backgroundColor, color, className, label = 'Button', variant, onClick, borderRadius, style, children
+    mode = 'secondary', size = 'medium', state, backgroundColor, color, className, label = 'Button', variant, onClick, borderRadius, style, children, disabled
 }: ButtonProps) => {
     return (
         <button
+            disabled={disabled}
             type="button"
-            className={['button', `button--${size}`, `button--${mode}`, `button--${variant}`, className].join(' ')}
+            className={['button', `button--${size}`, `button--${mode}`, `button--${variant}`, `${disabled ? 'opacity-60' : 'opacity-100'}`, className].join(' ')}
             style={{ backgroundColor, color, borderRadius, ...style }}
             onClick={onClick}
         >
