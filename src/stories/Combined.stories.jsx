@@ -1,12 +1,13 @@
 import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { SelectionCard } from '../components/SelectionCard';
+import { Button } from '../components';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
     title: 'Example/Combined',
     component: Navbar,
-    subcomponents: { SelectionCard }
+    subcomponents: { SelectionCard, Button }
     // argTypes: {
     //     end: { control: 'string' }
     // },
@@ -16,6 +17,7 @@ export default {
 const Template = (args) => <div className="">
     <Navbar {...args} />
     <SelectionCard />
+    <Button disabled={true}></Button>
 </div>;
 
 export const Primary = Template.bind({});
