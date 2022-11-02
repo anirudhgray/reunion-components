@@ -41,7 +41,7 @@ export const Button: React.FC<ButtonProps> = ({
         <button
             disabled={disabled}
             type="button"
-            className={['button', `button--${size}`, `button--${mode}`, `button--${variant}`, `${disabled ? 'opacity-60' : 'opacity-100'}`, className].join(' ')}
+            className={['button', `button--${size}`, `button--${mode}`, `button--${variant}`, `${disabled ? 'disabled' : 'null'}`, className].join(' ')}
             style={{ backgroundColor, color, borderRadius, ...style }}
             onClick={onClick}
         >

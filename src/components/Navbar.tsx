@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import '../main.css';
 import './navbar.css'
 import '/node_modules/primeflex/primeflex.css'
@@ -35,11 +34,11 @@ export const Navbar = ({
     const [animMobileNav, showAnimMobileNav] = useState(false)
     return (
         <div onClick={onClick}>
-            <div style={{ ...style }} className={`flex flex-row bg-white justify-content-between align-items-center ${className} px-3 py-2`} {...props}>
+            <div style={{ ...style }} className={`flex flex-row bg-white justify-content-between align-items-center ${className} lg:px-3 lg:py-2 p-2`} {...props}>
                 {(React.isValidElement(start)) ? start : (
                     <img className='h-2rem' alt='logo' src={start}></img>
                 )}
-                <nav className={`md:flex hidden ml-auto lg:gap-5 gap-3`}>
+                <nav className={`md:flex align-items-center hidden ml-auto lg:gap-5 gap-2`}>
                     {navItems?.map((item, index) => {
                         return (
                             <a href={item.path || "/"}>

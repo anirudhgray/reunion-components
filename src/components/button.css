@@ -23,6 +23,11 @@
     box-shadow: var(--button-danger-boxshadow);
 }
 
+.disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
 .button--small {
     padding: 12px 45px;
     border-radius: var(--radius-sm);

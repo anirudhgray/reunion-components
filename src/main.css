@@ -53,7 +53,19 @@
     --button-large-padding: 23px 108px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 900px) and (min-width:700px) {
+    :root {
+        --text-xxl: 32px;
+        --text-xl: 28px;
+        --text-lg: 22px;
+        --text: 18px;
+        --text-sm: 16px;
+        --text-xs: 12px;
+        --text-input: 16px;
+    }
+}
+
+@media (max-width: 550px) {
     :root {
         --text-xxl: 24px;
         --text-xl: 20px;
