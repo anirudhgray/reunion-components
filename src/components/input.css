@@ -2,13 +2,13 @@
     border-radius: var(--radius-lg);
     border: 2px solid black;
     padding: 18px 20px;
-    font-size: var(--text-input);
+    font-size: var(--text);
 }
 
 .textinput::placeholder {
     color: #9c9c9c9c;
     font-weight: 300;
-    font-size: var(--text-input);
+    font-size: var(--text);
 }
 
 .textinput--label {
@@ -37,4 +37,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+@media (max-width: 600px) {
+    .textinput {
+        padding: 12px 22px;
+        border-radius: var(--radius);
+    }
 }

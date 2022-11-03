@@ -24,6 +24,8 @@
     --radius: 15px;
     --radius-sm: 10px;
     --radius-xs: 5px;
+    /* SHADOW */
+    --shadow-md: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     --navbar-bgcolor: white;
     /* STEP NEW */
@@ -116,6 +118,10 @@
 
 .text-xs {
     font-size: var(--text-xs) !important;
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
 }
 
 body,

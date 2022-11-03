@@ -38,7 +38,7 @@ export const AlertResults: React.FC<AlertResultsProps> = ({
     className, style, items, itemClassName, itemStyle
 }: AlertResultsProps) => {
     return (
-        <div style={{ ...style }} className={`flex flex-column radius-md alert-results ${className}`}>
+        <div style={{ ...style }} className={`flex flex-column radius-md shadow-md alert-results ${className}`}>
             {items?.map((item, index) => {
 
                 return (
@@ -47,7 +47,7 @@ export const AlertResults: React.FC<AlertResultsProps> = ({
                             <p>{item.name}</p>
                             <Tag className='mt-2' content={item.id} />
                         </div>
-                        <div className="md:block hidden font-light">
+                        <div className="lg:block hidden font-light">
                             <p>{item.owner}</p>
                         </div>
                         <div className="md:block hidden font-light">
