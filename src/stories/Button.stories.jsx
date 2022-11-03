@@ -17,6 +17,10 @@ export default {
     variant: {
       options: ['filled', 'outline', 'text'],
       control: { type: 'radio' }
+    },
+    size: {
+      options: ['tiny', 'small', 'medium', 'large'],
+      control: { type: 'radio' }
     }
   },
 };

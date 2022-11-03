@@ -28,6 +28,12 @@
     cursor: default;
 }
 
+.button--tiny {
+    padding: 6px 10px;
+    border-radius: var(--radius-xs);
+    font-size: var(--text-sm);
+}
+
 .button--small {
     padding: 12px 45px;
     border-radius: var(--radius-sm);
@@ -50,4 +56,12 @@
 
 .button--outline {
     background-color: transparent;
+}
+
+@media (max-width: 425px) {
+    .button--tiny {
+        padding: 8px 12px;
+        border-radius: var(--radius-xs);
+        font-size: var(--text-input);
+    }
 }
