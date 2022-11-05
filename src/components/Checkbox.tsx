@@ -12,11 +12,11 @@ type CheckboxProps = {
 }
 
 export const Checkbox: React.FC<CheckboxProps> = ({
-    className, style, disabled, backgroundColor
+    className, style, disabled, backgroundColor, ...props
 }: CheckboxProps) => {
     return (
         <label className='checkbox--main'>
-            <input disabled={disabled} type='checkbox'>
+            <input {...props} disabled={disabled} type='checkbox'>
             </input >
             <span
                 style={{ backgroundColor, ...style }}

@@ -19,7 +19,7 @@ type ButtonProps = {
     /**
      * Button contents
      */
-    label?: string;
+    label?: string | number;
     /**
      * Optional click handler
      */
@@ -29,16 +29,17 @@ type ButtonProps = {
     color?: string;
     borderRadius?: number;
     variant?: string;
-    children?: JSX.Element | string;
+    children?: JSX.Element | string | number;
     style?: object;
     className?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
-    mode = 'secondary', size = 'medium', state, backgroundColor, color, className, label = 'Button', variant, onClick, borderRadius, style, children, disabled
+    mode = 'secondary', size = 'medium', state, backgroundColor, color, className, label = 'Button', variant, onClick, borderRadius, style, children, disabled, ...props
 }: ButtonProps) => {
     return (
         <button
+            {...props}
             disabled={disabled}
             type="button"
             className={['button', `button--${size}`, `button--${mode}`, `button--${variant}`, `${disabled ? 'disabled' : 'null'}`, className].join(' ')}
