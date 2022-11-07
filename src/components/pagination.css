@@ -1,0 +1,8 @@
+.button--secondary.pagination--button {
+    box-shadow: var(--orochimaru) 0px 0px 0px 1px inset
+}
+
+.pagination--button {
+    font-size: var(--text-xs);
+    padding: 11px 14px;
+}

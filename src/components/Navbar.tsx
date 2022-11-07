@@ -41,8 +41,8 @@ export const Navbar = ({
                 <nav className={`md:flex align-items-center hidden ml-auto lg:gap-5 gap-2`}>
                     {navItems?.map((item, index) => {
                         return (
-                            <a href={item.path || "/"}>
-                                <Button data-text={item} key={index} className='p-2 navbar--navbutton font-light' size='small' variant='text'>{item.name}</Button>
+                            <a key={index} href={item.path || "/"}>
+                                <Button data-text={item} className='p-2 navbar--navbutton font-light' size='small' variant='text'>{item.name}</Button>
                             </a>
                         )
                     })}
@@ -70,8 +70,8 @@ export const Navbar = ({
                 className={`z-2 py-4 px-3 absolute flex-column flex-grow-1 navbar w-screen h-screen align-items-start gap-3 ${mobileNav ? 'flex' : 'hidden'}`}>
                 {navItems?.map((item, index) => {
                     return (
-                        <a href={item.path || "/"}>
-                            <Button key={index} className='p-2 navbar--navbutton font-light text-lg' size='small' variant='text'>{item.name}</Button>
+                        <a key={index} href={item.path || "/"}>
+                            <Button className='p-2 navbar--navbutton font-light text-lg' size='small' variant='text'>{item.name}</Button>
                         </a>
                     )
                 })}

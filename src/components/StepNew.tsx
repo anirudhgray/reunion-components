@@ -43,7 +43,7 @@ export const StepNew: React.FC<StepNewProps> = ({
         <div style={{ ...style }} className={`flex flex-row gap-2 ${className}`}>
             {steps?.map((step, index) => {
                 return (
-                    <div className='text-md step-new--step relative'>
+                    <div key={`step${index}`} className='text-md step-new--step relative'>
                         <p className='step-new--text font-light pb-2'>{index + 1}/{steps.length}: {step}</p>
                         <hr className='step-new--hr absolute w-12 bottom-0 block z-0'></hr>
                         <hr style={{ 'borderColor': progressColor }} className={`step-new--hr-done absolute bottom-0 z-1 ${currentStep - 1 > index ? 'w-12' : currentStep - 1 < index ? 'w-0' : 'w-6'}`}></hr>
