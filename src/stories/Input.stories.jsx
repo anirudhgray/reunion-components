@@ -6,6 +6,10 @@ export default {
     title: 'Level Zero/Input',
     component: Input,
     argTypes: {
+        type: {
+            options: ['text', 'number', 'otp', 'password', 'email', 'time', 'url', 'tel'],
+            control: { type: 'radio' }
+        }
     },
 };
 

@@ -66,6 +66,10 @@ h6 {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media (max-width: 900px) {
     :root {
         --text-xxl: 32px;
