@@ -142,6 +142,42 @@ a {
     box-shadow: var(--shadow-md);
 }
 
+.errigal-white {
+    color: var(--errigal-white);
+}
+
+.forged-steel {
+    color: var(--forged-steel);
+}
+
+.codex-grey {
+    color: var(--codex-grey);
+}
+
+.orochimaru {
+    color: var(--orochimaru)
+}
+
+.black {
+    color: var(--black);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.red {
+    color: var(--red);
+}
+
+.light-red {
+    color: var(--light-red)
+}
+
+.green {
+    color: var(--green);
+}
+
 body,
 html {
     font-family: 'Lexend', 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

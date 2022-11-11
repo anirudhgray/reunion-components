@@ -9,6 +9,7 @@ import { motion } from "framer-motion"
 interface NavbarProps {
     onClick?: () => void;
     navItems?: NavItem[],
+    navItemsLeft?: boolean;
     start?: any | JSX.Element,
     end?: any | JSX.Element,
     className?: string,
@@ -27,18 +28,17 @@ const variants = {
 
 
 export const Navbar = ({
-    navItems, start, end, className, style, onClick,
-    ...props
+    navItems, start, end, className, style, onClick, navItemsLeft = false, ...props
 }: NavbarProps) => {
     const [mobileNav, showMobileNav] = useState(false)
     const [animMobileNav, showAnimMobileNav] = useState(false)
     return (
         <div onClick={onClick}>
-            <div style={{ ...style }} className={`flex flex-row navbar justify-content-between align-items-center ${className} lg:px-3 lg:py-2 p-2`} {...props}>
+            <div style={{ ...style }} className={`flex flex-row navbar justify-content-between align-items-center ${className} lg:px-3 lg:py-2 p-2 lg:gap-5 gap-2`} {...props}>
                 {(React.isValidElement(start)) ? start : (
                     <img className='h-2rem' alt='logo' src={start}></img>
                 )}
-                <nav className={`md:flex align-items-center hidden ml-auto lg:gap-5 gap-2`}>
+                <nav className={`md:flex align-items-center hidden ${navItemsLeft ? 'mr-auto' : 'ml-auto'} lg:gap-4 gap-2`}>
                     {navItems?.map((item, index) => {
                         return (
                             <a key={index} href={item.path || "/"}>
@@ -46,10 +46,10 @@ export const Navbar = ({
                             </a>
                         )
                     })}
-                    {(React.isValidElement(end)) ? end : (
-                        <Button size='small' variant='filled' mode='primary'>{end}</Button>
-                    )}
                 </nav>
+                {(React.isValidElement(end)) ? end : (
+                    <Button className='md:block hidden' size='small' variant='filled' mode='primary'>{end}</Button>
+                )}
                 <Button onClick={() => {
                     showAnimMobileNav(!animMobileNav)
                     if (mobileNav)
